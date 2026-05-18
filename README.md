@@ -1,4 +1,4 @@
-# Tech-Stack 2: ESP32 + Sensors + Unity Engine
+# Tech_Stack_02: ESP32 + Sensors + Unity Engine
 
 In this tech-stack, you'll learn how to build a robust interface between microcontrollers and Unity, enabling you to integrate sensors of any kind into the game engine. The workshop culminates in transforming an entire classroom of sensors into a unified digital environment. Easily transferable, easily scalable.
 
