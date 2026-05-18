@@ -188,7 +188,7 @@ MPU6050_light.h:
 
 ### Step 2: Install USB Driver
 
-For newer Macs, drivers (CP2102/CP2104 Driver and CH340/CH341 Driver) are already included in the OS. If you're running macOS Catalina 10.15 (2019) or later, skip this step. Otherwise, contact me
+For newer Macs, drivers (CP2102/CP2104 Driver and CH340/CH341 Driver) are already included in the OS. If you're running macOS Catalina 10.15 (2019) or later, skip this step. Otherwise, contact me.
 
 ### Step 3: Add ESP Support
 
@@ -270,7 +270,7 @@ sudo install -d /etc/apt/keyrings
 curl -fsSL https://hub.unity3d.com/linux/keys/public | sudo gpg --dearmor -o /etc/apt/keyrings/unityhub.gpg
 ```
 
-2. To add the Unity Hub repository (x86_64/amd64 only) you need an entry in `/etc/apt/sources.list.d`. Run the following command to add the Unity Hub repository:
+2. To add the Unity Hub repository (x86_64/amd64 only) you need an entry in /etc/apt/sources.list.d. Run the following command to add the Unity Hub repository:
 
 ```bash
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/unityhub.gpg] https://hub.unity3d.com/linux/repos/deb stable main" | sudo tee /etc/apt/sources.list.d/unityhub.list
@@ -289,7 +289,7 @@ sudo apt install unityhub
 
 ---
 
-# 1. Unity: Interface and C#
+# 1. Unity: Interface and C\#
 
 In this chapter, we'll explore Unity's interface and learn the fundamental concepts of working with GameObjects and C# scripting. By the end, you'll have created your first Unity project and used scripts to move, destroy, and spawn objects.
 
@@ -298,10 +298,9 @@ In this chapter, we'll explore Unity's interface and learn the fundamental conce
 1. Open Unity Hub
 2. Click "New Project" in the upper right
 3. Select "Universal 3D" template
-4. Select "3D (Built-In Render Pipeline)" template
-5. Name your project: "Techstack"
-6. Choose a location on your computer
-7. Click "Create Project"
+4. Name your project: "Techstack"
+5. Choose a location on your computer
+6. Click "Create Project"
 
 Unity will take a moment to set up your project. When it opens, you'll see the main Unity interface.
 
@@ -386,10 +385,10 @@ Prefabs are reusable templates that store complete GameObjects with all their Co
 ## Hands on: Understanding Components
 
 1. Implement Techstack Files : 
-	1. Download the Techstack_Projekt_Folder from this Git repository:  
-		1. Click the “Code” drop-down menu in the upper-right corner  
-		2. Click “Download ZIP”
-	2. Drag and drop the folder ".../Techstack_Projekt_Folder/Unity/Scripts" into "/Assets" of the “Project” window at the bottom of Unity
+	- Download the Techstack_Projekt_Folder from this Git repository:  
+		- Click the “Code” drop-down menu in the upper-right corner  
+		- Click “Download ZIP”
+	- Drag and drop the folder ".../Techstack_Projekt_Folder/Unity/Scripts" into "/Assets" of the “Project” window at the bottom of Unity
 
 2. Create the GameObject:
    - In the Hierarchy, right-click → 3D Object → Sphere
@@ -427,8 +426,7 @@ The Arduino IDE is a simplified programming environment designed to make microco
 - Upload Tool: Transfers compiled code to the ESP32 via USB
 - Serial Monitor: Displays real-time text output from your ESP32
 - Library Manager: Easy access to thousands of pre-written code libraries
-
-Programming Language: The Arduino IDE uses a simplified version of C++. It handles much of the complexity for you.
+- Programming Language: The Arduino IDE uses a simplified version of C++. It handles much of the complexity for you.
 
 Basic Arduino Sketch Structure:
 
@@ -480,7 +478,7 @@ Open Serial Monitor:
 
 What happens in the code:
 
-The ESP32 starts in the `setup()` function and prepares to send data with `Serial.begin()`. In the `loop()` function, which repeats continuously, it sends data to the computer using `Serial.print()`. To prevent this from happening too quickly, there is a `delay()`. The Serial Monitor can read and display this data.
+The ESP32 starts in the setup() function and prepares to send data with Serial.begin(). In the loop() function, which repeats continuously, it sends data to the computer using Serial.print(). To prevent this from happening too quickly, there is a delay(). The Serial Monitor can read and display this data.
 
 ---
 
@@ -505,7 +503,7 @@ The ESP32 DevKit V1 has 30 GPIO pins available for connecting sensors, actuators
 
 ### Breadboard
 
-Solderless prototyping board with connected holes for temporarily connecting ESP32 pins to components (using jumperkables) .
+Solderless prototyping board with vertically connected holes for temporarily connecting ESP32 pins to components (using jumperkables) .
  
 ### Water Level Sensor
 
@@ -554,7 +552,7 @@ Open Serial Monitor:
 
 What happens in the code:
 
-The ESP32 starts in the `setup()` function and prepares the pin to receive data from the sensor. In the `loop()` function, it receives data via `analogRead()` which it sends to the computer using `Serial.print()`. The Serial Monitor can read and display this data.
+The ESP32 starts in the setup() function and prepares the pin to receive data from the sensor. In the loop() function, it receives data via analogRead() which it sends to the computer using Serial.print(). The Serial Monitor can read and display this data.
 
 ---
 
@@ -568,7 +566,7 @@ Now we'll connect your water sensor to Unity and make GameObjects respond to rea
 
 ### ESP32 Code:
 
-We're using the same `3_WaterSensor.ino` from Chapter 3. No need to re-upload.
+We're using the same 3_WaterSensor.ino from Chapter 3. No need to re-upload.
 
 ### Unity Scene:
 
@@ -581,7 +579,7 @@ Unity can't read serial data by default. Ardity is a free library that handles E
 - Drag and drop the folder ".../Techstack_Projekt_Folder/Unity/Ardity" into "/Assets" of the “Project” window at the bottom of Unity. (Or from: https://ardity.dwilches.com/  and Import into Unity)
 - Go to Edit → Project Settings → Player:
 	- Under Other Settings, you'll find API Compatibility Level
-	- Change it from `.NET Standard 2.0` to `.NET Framework` (or `.NET 4.x`)
+	- Change it from .NET Standard 2.0 to .NET Framework (or .NET 4.x)
 	- Unity will automatically recompile
 
 ##### GameObjects and Scripts:
@@ -616,10 +614,10 @@ Unity can't read serial data by default. Ardity is a free library that handles E
 3. Add Component → Serial Controller (from Ardity)
 4. Configure Serial Controller:
    - Port Name: (Find your port: Arduino IDE → Tools → Port)
-     - Windows: `COM3`, `COM4`, `COM5`...
-     - Mac: `/dev/cu.usbserial-XXXX`
-     - Linux: `/dev/ttyUSB0`
-   - Baud Rate: `115200`
+     - Windows: COM3, COM4, COM5...
+     - Mac: /dev/cu.usbserial-XXXX
+     - Linux: /dev/ttyUSB0
+   - Baud Rate: 115200
 1. Message Listener:
    - Set messageListener: drag Spawner (with the WaveListener Component) from Hierarchy into the Message Listener field
 
@@ -628,7 +626,7 @@ Unity can't read serial data by default. Ardity is a free library that handles E
 1. Connect ESP32 via USB (with water sensor wired)
 2. Close Arduino IDE (Unity needs exclusive port access)
 3. Click Play in Unity
-4. Check Console: Should see `"ESP32 Wassersensor connected"`
+4. Check Console: Should see "ESP32 Wassersensor connected"
 
 
 
@@ -690,7 +688,7 @@ Open Serial Monitor:
 
 What the code does:
 
-The sketch initializes the MPU-6050 sensor and continuously reads tilt angles in X and Y directions. It sends formatted data (`X:10.5,Y:-5.2`) to Unity via serial communication.
+The sketch initializes the MPU-6050 sensor and continuously reads tilt angles in X and Y directions. It sends formatted data (X:10.5,Y:-5.2) to Unity via serial communication.
 
 ### Unity Scene:
 
