@@ -525,7 +525,7 @@ The water level sensor detects the presence and level of water by measuring cond
 
 - **Power off the ESP32** (disconnect USB)
 - Insert the ESP32 into the Breadboard as shown in the diagram
-- Connect sensor **+ (VCC)** to ESP32 **3V3** < (red wire in the diagram) etc... > 
+- Connect sensor **+ (VCC)** to ESP32 **3V3** (red wire in the diagram)
 - Connect sensor **- (GND)** to ESP32 **GND** (black wire in the diagram)
 - Connect sensor **S (Signal)** to ESP32 **GPIO 15** ("D15" green wire in the diagram)
 - **Double-check all connections** before powering on
