@@ -1,5 +1,4 @@
-# ESP32_Tech_Stack_02
-
+# Tech-Stack 2: ESP32 + Sensors + Unity Engine
 
 In this tech-stack, you'll learn how to build a robust interface between microcontrollers and Unity, enabling you to integrate sensors of any kind into the game engine. The workshop culminates in transforming an entire classroom of sensors into a unified digital environment. Easily transferable, easily scalable.
 
@@ -65,7 +64,9 @@ Video / Documentation: https://hochschuh-donovan.com/portfolio/empathy-swarm
 Cooperation, Tatjana Vall and Johannes Kiel.
 Two Wave Operators with water level sensors that communicate via water.
 
-![[24 Tatjana Vall & Johannes Kiel Installation View_Photos by Dirk Tacke.jpg]]
+
+![ESP32 DevKit V1](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/Tatjana%20Vall%20&%20Johannes%20Kiel%20Installation%20View_Photos%20by%20Dirk%20Tacke.jpg?raw=true)
+
 
 
 ---
@@ -519,7 +520,7 @@ The water level sensor detects the presence and level of water by measuring cond
 
 
 
-[![ESP32 DevKit V1 Poti](https://raw.githubusercontent.com/johanneskiel/ESP32_Tech_Stack_01/refs/heads/main/ESP32_poti.png)](https://raw.githubusercontent.com/johanneskiel/ESP32_Tech_Stack_01/refs/heads/main/ESP32_poti.png)
+[![ESP32 DevKit V1 Poti](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/ESP32_water.jpg?raw=true)](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/ESP32_water.jpg?raw=true)
 ### Wiring:
 
 - **Power off the ESP32** (disconnect USB)
@@ -656,7 +657,7 @@ The MPU-6050 is a 6-axis accelerometer and gyroscope sensor that measures motion
 - Four pins: VCC (power), GND (ground), SDA (data), SCL (clock)
 
 
-[![ESP32 DevKit V1 Poti](https://raw.githubusercontent.com/johanneskiel/ESP32_Tech_Stack_01/refs/heads/main/ESP32_poti.png)](https://raw.githubusercontent.com/johanneskiel/ESP32_Tech_Stack_01/refs/heads/main/ESP32_poti.png)
+[![ESP32 DevKit V1 Poti](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/ESP32_MPU.jpg?raw=true)](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/ESP32_MPU.jpg?raw=true)
 ### Wiring:
 
 - **Power off the ESP32** (disconnect USB)
