@@ -6,7 +6,7 @@ In this tech-stack, you'll learn how to build a robust interface between microco
 
 Unity is one of the world's leading real-time 3D development platforms, widely used for creating games, interactive experiences, architectural visualizations, and digital art installations. What makes Unity particularly powerful is its accessible C# scripting system, real-time rendering capabilities, and extensive asset ecosystem.
 
-Unity's game engine architecture treats everything as a GameObject: from 3D models and lights to invisible controllers and data processors. This modular approach makes it ideal for sensor-based interactive installations, where physical world data can be mapped to digital behaviors in real-time.
+Unity's game engine architecture treats everything as a GameObject: from 3D models and lights to invisible controllers and data processors. 
 
 ##### Unity Engine: Platform Considerations
 
@@ -62,7 +62,7 @@ Video / Documentation: https://hochschuh-donovan.com/portfolio/empathy-swarm
 ### Viral Wave Operators (2024)   
 
 Cooperation, Tatjana Vall and Johannes Kiel.
-Two Wave Operators with water level sensors that communicate via water.
+Two Wave Operators that communicate via water with water level sensors.
 
 
 ![ESP32 DevKit V1](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/Tatjana%20Vall%20&%20Johannes%20Kiel%20Installation%20View_Photos%20by%20Dirk%20Tacke.jpg?raw=true)
@@ -75,8 +75,8 @@ Two Wave Operators with water level sensors that communicate via water.
 
 | Experience   | Learning goal                                                                                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Beginner** | Overcoming challenges and hurdles: Learn ESP32 features and programming with Arduino IDE, then integrate sensor data into Unity to create an interactive work. |
-| **Advanced** | Consolidate knowledge base: Understand the network communication of ESP32 to build a room-scale sensor network integrated into Unity                           |
+| Beginner | Overcoming challenges and hurdles: Learn ESP32 features and programming with Arduino IDE, then integrate sensor data into Unity to create an interactive work. |
+| Advanced | Consolidate knowledge base: Understand the network communication of ESP32 to build a room-scale sensor network integrated into Unity                           |
 
 ---
 
@@ -113,7 +113,7 @@ Glossary of essential terms related to ESP32 hardware, development, data transmi
 
 # 0. Setup: ESP Arduino IDE & Unity Engine
 
-**All participants should bring the following:**
+All participants should bring the following:
 - Mouse (for better control in Unity)
 - For Mac users: MAC standard USB adapter
 
@@ -125,8 +125,8 @@ Setup time: 10 - 15 minutes.
 
 ### Step 1: Download Arduino IDE
 
-1. Go to: **www.arduino.cc/en/software**
-2. Download **"Windows Win 10 and newer, 64 bits"**
+1. Go to: www.arduino.cc/en/software
+2. Download "Windows Win 10 and newer, 64 bits"
 3. Install the downloaded file
 
 ### Step 2: Install USB Drivers
@@ -134,12 +134,12 @@ Setup time: 10 - 15 minutes.
 ##### CP2102/CP2104 Driver:
 
 1. Download: https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
-2. Extract and **right-click on silabser.inf** → **"Install"**
+2. Extract and right-click on silabser.inf → "Install"
 
 ##### CH340/CH341 Driver:
 
 1. Download: https://assets.techeia.com/downloads/drivers/ch340-ch341ser-driver-win10-11.zip
-2. Extract **CH341SER.EXE** and install (Right-click → Run as Administrator)
+2. Extract CH341SER.EXE and install (Right-click → Run as Administrator)
 
 ### Step 3: Add ESP Support
 
@@ -151,8 +151,8 @@ Setup time: 10 - 15 minutes.
 If you have trouble finding "ESP32 by Espressif Systems" in the Boards Manager, do the following: (otherwise continue to Step 4)
 
 1. Open Arduino IDE
-2. **"Arduino IDE"** → **"Preferences"** → **"Settings"**
-3. In **"Additional boards manager URLs"** paste:
+2. "Arduino IDE" → "Preferences" → "Settings"
+3. In "Additional boards manager URLs" paste:
 
 ```
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
@@ -160,11 +160,11 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ### Step 4: Libraries for ESP in Arduino IDE
 
-**MPU6050_light.h:**
+MPU6050_light.h:
 - Open Arduino IDE
-- **"Tools"** → **"Manage Libraries..."**
-- Search for **"MPU6050 light"**
-- Install **"MPU6050_light by rfetick"**
+- "Tools" → "Manage Libraries..."
+- Search for "MPU6050 light"
+- Install "MPU6050_light by rfetick"
 
 ### Step 5: Unity
 
@@ -182,8 +182,8 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ### Step 1: Download Arduino IDE
 
-1. Go to: **www.arduino.cc/en/software**
-2. Download **MacOS Intel** or **MacOS Apple Silicon**
+1. Go to: www.arduino.cc/en/software
+2. Download MacOS Intel or MacOS Apple Silicon
 3. Install in Applications folder
 
 ### Step 2: Install USB Driver
@@ -200,8 +200,8 @@ For newer Macs, drivers (CP2102/CP2104 Driver and CH340/CH341 Driver) are alread
 If you have trouble finding "ESP32 by Espressif Systems" in the Boards Manager, do the following: (otherwise continue to Step 4)
 
 1. Open Arduino IDE
-2. **"Arduino IDE"** → **"Preferences"** → **"Settings"**
-3. In **"Additional boards manager URLs"** paste:
+2. "Arduino IDE" → "Preferences" → "Settings"
+3. In "Additional boards manager URLs" paste:
 
 ```
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
@@ -209,11 +209,11 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ### Step 4: Libraries for ESP in Arduino IDE
 
-**MPU6050_light.h:**
+MPU6050_light.h:
 - Open Arduino IDE
-- **"Tools"** → **"Manage Libraries..."**
-- Search for **"MPU6050 light"**
-- Install **"MPU6050_light by rfetick"**
+- "Tools" → "Manage Libraries..."
+- Search for "MPU6050 light"
+- Install "MPU6050_light by rfetick"
 
 ### Step 5: Unity
 
@@ -229,8 +229,8 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ### Step 1: Download Arduino IDE
 
-1. Go to: **www.arduino.cc/en/software**
-2. Download **"Linux 64 bits"** AppImage
+1. Go to: www.arduino.cc/en/software
+2. Download "Linux 64 bits" AppImage
 3. Run the AppImage file
 
 ### Step 2: Install USB Drivers
@@ -256,10 +256,10 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ### Step 4: Libraries for ESP in Arduino IDE
 
-**MPU6050_light.h**
-- **"Tools"** → **"Manage Libraries..."**
-- Search for **"MPU6050 light"**
-- Install **"MPU6050_light by rfetick"**
+MPU6050_light.h
+- "Tools" → "Manage Libraries..."
+- Search for "MPU6050 light"
+- Install "MPU6050_light by rfetick"
 
 ### Step 5: Unity
 
@@ -295,13 +295,13 @@ In this chapter, we'll explore Unity's interface and learn the fundamental conce
 
 ## Hands on: Creating Your First Unity Project
 
-1. **Open Unity Hub**
-2. Click **"New Project"** in the upper right
-3. Select **"Universal 3D"** template
-4. Select **"3D (Built-In Render Pipeline)"** template
-5. Name your project: **"Techstack"**
+1. Open Unity Hub
+2. Click "New Project" in the upper right
+3. Select "Universal 3D" template
+4. Select "3D (Built-In Render Pipeline)" template
+5. Name your project: "Techstack"
 6. Choose a location on your computer
-7. Click **"Create Project"**
+7. Click "Create Project"
 
 Unity will take a moment to set up your project. When it opens, you'll see the main Unity interface.
 
@@ -314,24 +314,24 @@ Unity's interface consists of several key windows that work together:
 
 ### Scene View
 
-The **Scene View** is your 3D workspace where you build and arrange your virtual environment. Here you can:
+The Scene View is your 3D workspace where you build and arrange your virtual environment. Here you can:
 
-- Navigate with **Right-Click + WASD** (like a first-person game)
-- Pan with **Middle Mouse Button**
-- Rotate view with **Alt + Left Mouse**
-- Focus on an object by selecting it and pressing **F**
+- Navigate with Right-Click + WASD (like a first-person game)
+- Pan with Middle Mouse Button
+- Rotate view with Alt + Left Mouse
+- Focus on an object by selecting it and pressing F
 
 ### Game View
 
-The **Game View** shows what the player/user sees through the camera. Press the **Play button** at the top to test your project. While in Play mode, any changes you make are temporary and will be lost when you stop. Always exit Play mode before making changes you want to keep.
+The Game View shows what the player/user sees through the camera. Press the Play button at the top to test your project. While in Play mode, any changes you make are temporary and will be lost when you stop. Always exit Play mode before making changes you want to keep.
 
 ### Hierarchy
 
-The **Hierarchy** window lists all GameObjects in your current scene. Think of it as the table of contents for your 3D world. Every object in your scene appears here in a tree structure, showing parent-child relationships.
+The Hierarchy window lists all GameObjects in your current scene. Think of it as the table of contents for your 3D world. Every object in your scene appears here in a tree structure, showing parent-child relationships.
 
 ### Inspector
 
-The **Inspector** displays detailed information about the currently selected GameObject:
+The Inspector displays detailed information about the currently selected GameObject:
 
 - Transform (position, rotation, scale)
 - Components (scripts, renderers, colliders, etc.)
@@ -339,11 +339,11 @@ The **Inspector** displays detailed information about the currently selected Gam
 
 ### Project
 
-The **Project** window shows all assets in your project: scripts, materials, textures, prefabs, etc. This is like your file browser within Unity.
+The Project window shows all assets in your project: scripts, materials, textures, prefabs, etc. This is like your file browser within Unity.
 
 ### Console
 
-The **Console** displays messages, warnings, and errors. This is essential for debugging.
+The Console displays messages, warnings, and errors. This is essential for debugging.
 
 ---
 
@@ -351,7 +351,7 @@ The **Console** displays messages, warnings, and errors. This is essential for d
 
 ### GameObjects
 
-In Unity, everything is a **GameObject**. Think of it as an empty container or a blank canvas. By itself, a GameObject has no appearance, no behavior, and no functionality: it is simply a named object that exists in your scene at a specific location in 3D space.
+In Unity, everything is a GameObject. Think of it as an empty container or a blank canvas. By itself, a GameObject has no appearance, no behavior, and no functionality: it is simply a named object that exists in your scene at a specific location in 3D space.
 
 - They exist in the scene hierarchy
 - They can be parents or children of other GameObjects
@@ -360,23 +360,23 @@ In Unity, everything is a **GameObject**. Think of it as an empty container or a
 
 ### Components
 
-**Components** are modular pieces of functionality that you attach to GameObjects. They define what a GameObject can do, how it looks, how it behaves, and how it interacts with the world. Without components, a GameObject is just an invisible point in space.
+Components are modular pieces of functionality that you attach to GameObjects. They define what a GameObject can do, how it looks, how it behaves, and how it interacts with the world. Without components, a GameObject is just an invisible point in space.
 
-Unity follows a **component-based architecture**: instead of creating complex object classes, you build functionality by combining simple, reusable components.
+Unity follows a component-based architecture: instead of creating complex object classes, you build functionality by combining simple, reusable components.
 
-**Example Components:**
+Example Components:
 
 | Component         | Description                                                                                                                       |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Transform**     | Defines position (x, y, z), rotation, and scale. Every GameObject must have this: it's automatically added and cannot be removed. |
-| **Mesh Renderer** | Makes the GameObject visible by rendering a 3D mesh with a material (the surface appearance).                                     |
-| **Collider**      | Defines invisible physical boundaries for collision detection.                                                                    |
-| **Rigidbody**     | Adds physics simulation to the GameObject: gravity, forces, momentum, and realistic collision responses.                          |
-| **Scripts (C#)**  | Your custom code that defines unique behaviors and logic.                                                                         |
+| Transform     | Defines position (x, y, z), rotation, and scale. Every GameObject must have this: it's automatically added and cannot be removed. |
+| Mesh Renderer | Makes the GameObject visible by rendering a 3D mesh with a material (the surface appearance).                                     |
+| Collider      | Defines invisible physical boundaries for collision detection.                                                                    |
+| Rigidbody     | Adds physics simulation to the GameObject: gravity, forces, momentum, and realistic collision responses.                          |
+| Scripts (C#)  | Your custom code that defines unique behaviors and logic.                                                                         |
 
 ### Prefabs
 
-**Prefabs** are reusable templates that store complete GameObjects with all their Components. Think of a Prefab as a blueprint: you configure a GameObject once (with all its Components), save it as a Prefab, and then create identical copies whenever you need them.
+Prefabs are reusable templates that store complete GameObjects with all their Components. Think of a Prefab as a blueprint: you configure a GameObject once (with all its Components), save it as a Prefab, and then create identical copies whenever you need them.
 
 - They are assets stored in your Project window
 - You can instantiate (spawn) multiple copies in your scenes
@@ -385,28 +385,28 @@ Unity follows a **component-based architecture**: instead of creating complex ob
 
 ## Hands on: Understanding Components
 
-1. **Implement Techstack Files **: 
+1. Implement Techstack Files : 
 	1. Download the Techstack_Projekt_Folder from this Git repository:  
 		1. Click the “Code” drop-down menu in the upper-right corner  
 		2. Click “Download ZIP”
 	2. Drag and drop the folder ".../Techstack_Projekt_Folder/Unity/Scripts" into "/Assets" of the “Project” window at the bottom of Unity
 
-2. **Create the GameObject:**
-   - In the **Hierarchy**, right-click → **3D Object → Sphere**
+2. Create the GameObject:
+   - In the Hierarchy, right-click → 3D Object → Sphere
    - A sphere appears at position (0, 0, 0)
    - This creates a GameObject named "Sphere"
 
-3. **Select the sphere and look at the Inspector**
+3. Select the sphere and look at the Inspector
    - Notice the Components: The GameObject automatically comes with these Components:
-     - **Transform**: Position (0, 0, 0), Rotation (0, 0, 0), Scale (1, 1, 1)
-     - **Mesh Filter**: Holds the sphere mesh (the 3D geometry)
-     - **Mesh Renderer**: Renders the sphere so you can see it
-     - **Sphere Collider**: Defines the collision boundary
+     - Transform: Position (0, 0, 0), Rotation (0, 0, 0), Scale (1, 1, 1)
+     - Mesh Filter: Holds the sphere mesh (the 3D geometry)
+     - Mesh Renderer: Renders the sphere so you can see it
+     - Sphere Collider: Defines the collision boundary
 
-4. **Add functionality by adding more Components:**
-   - Add **Rigidbody** (built-in Component) → press play → Now it responds to gravity and physics
+4. Add functionality by adding more Components:
+   - Add Rigidbody (built-in Component) → press play → Now it responds to gravity and physics
 	→ press stop 
-   - **Add Component → Move** (Move.cs)
+   - Add Component → Move (Move.cs)
     - Direction: (1, 0, 0)
     - Speed: 10   
 	→ press play
@@ -416,21 +416,21 @@ Unity follows a **component-based architecture**: instead of creating complex ob
 
 # 2. ESP32: Arduino IDE and C++
 
-In this chapter, we'll upload our first program to the ESP32 and learn how **Serial Communication** works between the microcontroller and your computer. This communication channel is essential for debugging, monitoring sensor data, and eventually sending data to Unity.
+In this chapter, we'll upload our first program to the ESP32 and learn how Serial Communication works between the microcontroller and your computer. This communication channel is essential for debugging, monitoring sensor data, and eventually sending data to Unity.
 
 ## Arduino IDE and C++
 
-The **Arduino IDE** is a simplified programming environment designed to make microcontroller programming accessible. It provides:
+The Arduino IDE is a simplified programming environment designed to make microcontroller programming accessible. It provides:
 
-- **Code Editor**: Where you write your programs
-- **Compiler**: Converts your code into machine language the ESP32 understands
-- **Upload Tool**: Transfers compiled code to the ESP32 via USB
-- **Serial Monitor**: Displays real-time text output from your ESP32
-- **Library Manager**: Easy access to thousands of pre-written code libraries
+- Code Editor: Where you write your programs
+- Compiler: Converts your code into machine language the ESP32 understands
+- Upload Tool: Transfers compiled code to the ESP32 via USB
+- Serial Monitor: Displays real-time text output from your ESP32
+- Library Manager: Easy access to thousands of pre-written code libraries
 
-**Programming Language:** The Arduino IDE uses a simplified version of **C++**. It handles much of the complexity for you.
+Programming Language: The Arduino IDE uses a simplified version of C++. It handles much of the complexity for you.
 
-**Basic Arduino Sketch Structure:**
+Basic Arduino Sketch Structure:
 
 ```cpp
 void setup() {
@@ -447,38 +447,38 @@ void loop() {
 
 The ESP32 DevKit V1 has two important buttons:
 
-- **EN Button (Reset)** - Restarts the ESP32 and runs the uploaded sketch (program) from the beginning
-- **BOOT Button (Flash/GPIO0)** - Used for uploading sketches (programs). Also programmable as regular input button in your code
+- EN Button (Reset) - Restarts the ESP32 and runs the uploaded sketch (program) from the beginning
+- BOOT Button (Flash/GPIO0) - Used for uploading sketches (programs). Also programmable as regular input button in your code
 
-**Location:** Both buttons are located on the ESP32 development board next to the USB connector.
+Location: Both buttons are located on the ESP32 development board next to the USB connector.
 
 ## Serial Communication
 
-**Serial Communication** is a method of sending data one bit at a time over a single wire. For the ESP32, this happens over the USB cable, allowing the microcontroller and computer to exchange text messages. The ESP32 uses serial communication at 115200 bits per second (baud rate).
+Serial Communication is a method of sending data one bit at a time over a single wire. For the ESP32, this happens over the USB cable, allowing the microcontroller and computer to exchange text messages. The ESP32 uses serial communication at 115200 bits per second (baud rate).
 
 ## Hands on: Uploading the First Sketch to ESP32 DevKit
 
-Open **"2_serial_com.ino"** in the Arduino IDE
+Open "2_serial_com.ino" in the Arduino IDE
 
-**Upload process:**
+Upload process:
 
-1. **Connect ESP32 via USB** - Use micro-USB cable to connect to computer
-2. **Select Board** - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
-3. **Select Port** - "Tools" → "Port" → Choose ESP32 USB port:
-   - **Windows:** COM3, COM4, COM5...
-   - **Mac:** /dev/cu.usbserial-... or /dev/cu.SLAB_USBtoUART
-   - **Linux:** /dev/ttyUSB0, /dev/ttyUSB1...
-4. **Click Upload** - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
-5. **Wait** - Sketch compiles: "Connecting..." appears: Press and hold the **BOOT button** for about **2 seconds** during the "Connecting..." phase, then release.
+1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
+2. Select Board - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
+3. Select Port - "Tools" → "Port" → Choose ESP32 USB port:
+   - Windows: COM3, COM4, COM5...
+   - Mac: /dev/cu.usbserial-... or /dev/cu.SLAB_USBtoUART
+   - Linux: /dev/ttyUSB0, /dev/ttyUSB1...
+4. Click Upload - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
+5. Wait - Sketch compiles: "Connecting..." appears: Press and hold the BOOT button for about 2 seconds during the "Connecting..." phase, then release.
 
-**Open Serial Monitor:**
+Open Serial Monitor:
 
-1. After uploading the sketch: **Open Serial Monitor** - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
-2. **Set baud rate** - Select **115200** in dropdown (bottom right of Serial Monitor window)
-3. **View output** - Real-time text output from ESP32 appears here
-4. **Tip:** If no output appears, press the **EN (Reset) button** on ESP32 to restart.
+1. After uploading the sketch: Open Serial Monitor - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
+2. Set baud rate - Select 115200 in dropdown (bottom right of Serial Monitor window)
+3. View output - Real-time text output from ESP32 appears here
+4. Tip: If no output appears, press the EN (Reset) button on ESP32 to restart.
 
-**What happens in the code:**
+What happens in the code:
 
 The ESP32 starts in the `setup()` function and prepares to send data with `Serial.begin()`. In the `loop()` function, which repeats continuously, it sends data to the computer using `Serial.print()`. To prevent this from happening too quickly, there is a `delay()`. The Serial Monitor can read and display this data.
 
@@ -490,14 +490,14 @@ In this chapter, we'll connect our first sensor to the ESP32 and read real-world
 
 ## ESP32 GPIO Pins
 
-**GPIO** stands for **General Purpose Input/Output**. These are the metal pins on your ESP32 that you can configure to either:
-- **Input**: Read signals from sensors, buttons, switches
-- **Output**: Send signals to LEDs, motors, displays
+GPIO stands for General Purpose Input/Output. These are the metal pins on your ESP32 that you can configure to either:
+- Input: Read signals from sensors, buttons, switches
+- Output: Send signals to LEDs, motors, displays
 
-The **ESP32 DevKit V1** has **30 GPIO pins** available for connecting sensors, actuators, and other electronic components.
+The ESP32 DevKit V1 has 30 GPIO pins available for connecting sensors, actuators, and other electronic components.
 
-- **GND** pin: negative pole
-- **3V3** pin: 3.3V output (power for sensors)
+- GND pin: negative pole
+- 3V3 pin: 3.3V output (power for sensors)
 
 ![ESP32 DevKit V1](https://m.media-amazon.com/images/I/518GSZDPb6L._AC_.jpg)
 
@@ -509,7 +509,7 @@ Solderless prototyping board with connected holes for temporarily connecting ESP
  
 ### Water Level Sensor
 
-The water level sensor detects the presence and level of water by measuring conductivity between exposed traces. As water level rises, more traces are connected, creating a variable resistance that outputs an analog voltage signal. **Analog signals** are continuous voltage values between 0V and 3.3V (Digital representation: 4095, 12-bit resolution).
+The water level sensor detects the presence and level of water by measuring conductivity between exposed traces. As water level rises, more traces are connected, creating a variable resistance that outputs an analog voltage signal. Analog signals are continuous voltage values between 0V and 3.3V (Digital representation: 4095, 12-bit resolution).
 
 - Operating voltage: 3.3V - 5V
 - Output type: Analog (0V - 3.3V)
@@ -523,36 +523,36 @@ The water level sensor detects the presence and level of water by measuring cond
 [![ESP32 DevKit V1 Poti](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/ESP32_water.jpg?raw=true)](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/ESP32_water.jpg?raw=true)
 ### Wiring:
 
-- **Power off the ESP32** (disconnect USB)
+- Power off the ESP32 (disconnect USB)
 - Insert the ESP32 into the Breadboard as shown in the diagram
-- Connect sensor **+ (VCC)** to ESP32 **3V3** (red wire in the diagram)
-- Connect sensor **- (GND)** to ESP32 **GND** (black wire in the diagram)
-- Connect sensor **S (Signal)** to ESP32 **GPIO 15** ("D15" green wire in the diagram)
-- **Double-check all connections** before powering on
+- Connect sensor + (VCC) to ESP32 3V3 (red wire in the diagram)
+- Connect sensor - (GND) to ESP32 GND (black wire in the diagram)
+- Connect sensor S (Signal) to ESP32 GPIO 15 ("D15" green wire in the diagram)
+- Double-check all connections before powering on
 
 ### ESP32 Code:
 
-Download and open **"3_WaterSensor.ino"** in the Arduino IDE
+Download and open "3_WaterSensor.ino" in the Arduino IDE
 
-**Upload process:**
+Upload process:
 
-1. **Connect ESP32 via USB** - Use micro-USB cable to connect to computer
-2. **Select Board** - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
-3. **Select Port** - "Tools" → "Port" → Choose ESP32 USB port:
-   - **Windows:** COM3, COM4, COM5...
-   - **Mac:** /dev/cu.usbserial-... or /dev/cu.SLAB_USBtoUART
-   - **Linux:** /dev/ttyUSB0, /dev/ttyUSB1...
-4. **Click Upload** - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
-5. **Wait** - Sketch compiles: "Connecting..." appears: Press and hold the **BOOT button** for about **2 seconds** during the "Connecting..." phase, then release.
+1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
+2. Select Board - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
+3. Select Port - "Tools" → "Port" → Choose ESP32 USB port:
+   - Windows: COM3, COM4, COM5...
+   - Mac: /dev/cu.usbserial-... or /dev/cu.SLAB_USBtoUART
+   - Linux: /dev/ttyUSB0, /dev/ttyUSB1...
+4. Click Upload - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
+5. Wait - Sketch compiles: "Connecting..." appears: Press and hold the BOOT button for about 2 seconds during the "Connecting..." phase, then release.
 
-**Open Serial Monitor:**
+Open Serial Monitor:
 
-1. After uploading the sketch: **Open Serial Monitor** - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
-2. **Set baud rate** - Select **115200** in dropdown (bottom right of Serial Monitor window)
-3. **View output** - Real-time text output of the water level sensor
-4. **→ Test the sensor readings using the water cup**.
+1. After uploading the sketch: Open Serial Monitor - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
+2. Set baud rate - Select 115200 in dropdown (bottom right of Serial Monitor window)
+3. View output - Real-time text output of the water level sensor
+4. → Test the sensor readings using the water cup.
 
-**What happens in the code:**
+What happens in the code:
 
 The ESP32 starts in the `setup()` function and prepares the pin to receive data from the sensor. In the `loop()` function, it receives data via `analogRead()` which it sends to the computer using `Serial.print()`. The Serial Monitor can read and display this data.
 
@@ -576,63 +576,63 @@ A Unity scene where GameObjects move up and down based on water level.
 
 ##### Ardity (Serial Communication Library)
 
-Unity can't read serial data by default. **Ardity** is a free library that handles ESP32 to Unity communication. 
+Unity can't read serial data by default. Ardity is a free library that handles ESP32 to Unity communication. 
 
 - Drag and drop the folder ".../Techstack_Projekt_Folder/Unity/Ardity" into "/Assets" of the “Project” window at the bottom of Unity. (Or from: https://ardity.dwilches.com/  and Import into Unity)
-- Go to **Edit → Project Settings → Player**:
-	- Under **Other Settings**, you'll find **API Compatibility Level**
-	- Change it from `.NET Standard 2.0` to **`.NET Framework`** (or `.NET 4.x`)
+- Go to Edit → Project Settings → Player:
+	- Under Other Settings, you'll find API Compatibility Level
+	- Change it from `.NET Standard 2.0` to `.NET Framework` (or `.NET 4.x`)
 	- Unity will automatically recompile
 
 ##### GameObjects and Scripts:
 
 ##### 1. Sphere Prefab
 
-1. **Hierarchy → 3D Object → Sphere** 
+1. Hierarchy → 3D Object → Sphere 
    - Scale: (0.3, 0.3, 0.3)
-1. **Add Component → Move** (Move.cs)**
+1. Add Component → Move (Move.cs)
    - Direction: (0, 0, 1)
    - Speed: 10
-1. **Add Component → Destroy** (Destroy.cs)
+1. Add Component → Destroy (Destroy.cs)
    - Max Distance: 10
-1. **Drag Sphere to Project window** in "Assets/prefabs" → Creates prefab
-2. **Delete Sphere from Hierarchy**
+1. Drag Sphere to Project window in "Assets/prefabs" → Creates prefab
+2. Delete Sphere from Hierarchy
 
 ##### 2. Spawner
 
-1. **Hierarchy → Create Empty**
-2. Rename: **"Spawner"**
+1. Hierarchy → Create Empty
+2. Rename: "Spawner"
 3. Position: (0, 0, 0)
-4. **Add Component → Spawn** (Spawn.cs)
-   - **Drag Sphere prefab** into Prefab field
+4. Add Component → Spawn (Spawn.cs)
+   - Drag Sphere prefab into Prefab field
    - Time: 0.1
-1. **Add Component →  WaveListener** (WaveListener.cs) 
+1. Add Component →  WaveListener (WaveListener.cs) 
    - Distance: 10
 
 ##### 3. SerialController
 
-1. **Hierarchy → Create Empty**
-2. Rename: **"SerialController"**
-3. **Add Component → Serial Controller** (from Ardity)
-4. **Configure Serial Controller:**
-   - **Port Name:** (Find your port: Arduino IDE → Tools → Port)
+1. Hierarchy → Create Empty
+2. Rename: "SerialController"
+3. Add Component → Serial Controller (from Ardity)
+4. Configure Serial Controller:
+   - Port Name: (Find your port: Arduino IDE → Tools → Port)
      - Windows: `COM3`, `COM4`, `COM5`...
      - Mac: `/dev/cu.usbserial-XXXX`
      - Linux: `/dev/ttyUSB0`
-   - **Baud Rate:** `115200`
-1. **Message Listener:**
-   - Set messageListener: drag **Spawner** (with the WaveListener Component) from Hierarchy into the Message Listener field
+   - Baud Rate: `115200`
+1. Message Listener:
+   - Set messageListener: drag Spawner (with the WaveListener Component) from Hierarchy into the Message Listener field
 
 ##### Run and Test:
 
-1. **Connect ESP32** via USB (with water sensor wired)
-2. **Close Arduino IDE** (Unity needs exclusive port access)
-3. **Click Play in Unity**
-4. **Check Console:** Should see `"ESP32 Wassersensor connected"`
+1. Connect ESP32 via USB (with water sensor wired)
+2. Close Arduino IDE (Unity needs exclusive port access)
+3. Click Play in Unity
+4. Check Console: Should see `"ESP32 Wassersensor connected"`
 
 
 
-**What happens in the code:**
+What happens in the code:
 
 SerialController from Ardity
 WaveListener.cs: 
@@ -649,7 +649,7 @@ Now we'll work with the MPU-6050, to create a tilt-controlled platform in Unity.
 
 The MPU-6050 is a 6-axis accelerometer and gyroscope sensor that measures motion and orientation in 3D space.
 
-**Technical specifications:**
+Technical specifications:
 - 3-axis accelerometer (measures acceleration/tilt)
 - 3-axis gyroscope (measures rotation)
 - I2C communication protocol
@@ -660,35 +660,35 @@ The MPU-6050 is a 6-axis accelerometer and gyroscope sensor that measures motion
 [![ESP32 DevKit V1 Poti](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/ESP32_MPU.jpg?raw=true)](https://github.com/johanneskiel/ESP32_Tech_Stack_02/blob/main/IMG/ESP32_MPU.jpg?raw=true)
 ### Wiring:
 
-- **Power off the ESP32** (disconnect USB)
-- Connect MPU-6050 **VCC** to ESP32 **3V3** (red wire in the diagram)
-- Connect MPU-6050 **GND** to ESP32 **GND** (black wire in the diagram)
-- Connect MPU-6050 **SDA** to ESP32 **GPIO 21** (green wire in the diagram)
-- Connect MPU-6050 **SCL** to ESP32 **GPIO 22** (purple wire in the diagram)
-- **Double-check all connections** before powering on
+- Power off the ESP32 (disconnect USB)
+- Connect MPU-6050 VCC to ESP32 3V3 (red wire in the diagram)
+- Connect MPU-6050 GND to ESP32 GND (black wire in the diagram)
+- Connect MPU-6050 SDA to ESP32 GPIO 21 (green wire in the diagram)
+- Connect MPU-6050 SCL to ESP32 GPIO 22 (purple wire in the diagram)
+- Double-check all connections before powering on
 
 ### ESP32 Code:
 
-Open **"4_2_MPU6050.ino"** in the Arduino IDE and upload it following the same process as before. 
+Open "4_2_MPU6050.ino" in the Arduino IDE and upload it following the same process as before. 
 
-**Upload process:**
+Upload process:
 
-1. **Connect ESP32 via USB** - Use micro-USB cable to connect to computer
-2. **Select Board** - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
-3. **Select Port** - "Tools" → "Port" → Choose ESP32 USB port:
-   - **Windows:** COM3, COM4, COM5...
-   - **Mac:** /dev/cu.usbserial-... or /dev/cu.SLAB_USBtoUART
-   - **Linux:** /dev/ttyUSB0, /dev/ttyUSB1...
-4. **Click Upload** - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
-5. **Wait** - Sketch compiles: "Connecting..." appears: Press and hold the **BOOT button** for about **2 seconds** during the "Connecting..." phase, then release.
+1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
+2. Select Board - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
+3. Select Port - "Tools" → "Port" → Choose ESP32 USB port:
+   - Windows: COM3, COM4, COM5...
+   - Mac: /dev/cu.usbserial-... or /dev/cu.SLAB_USBtoUART
+   - Linux: /dev/ttyUSB0, /dev/ttyUSB1...
+4. Click Upload - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
+5. Wait - Sketch compiles: "Connecting..." appears: Press and hold the BOOT button for about 2 seconds during the "Connecting..." phase, then release.
 
-**Open Serial Monitor:**
+Open Serial Monitor:
 
-1. After uploading the sketch: **Open Serial Monitor** - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
-2. **Set baud rate** - Select **115200** in dropdown (bottom right of Serial Monitor window)
-3. **View output** - Real-time text output of the sensor
+1. After uploading the sketch: Open Serial Monitor - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
+2. Set baud rate - Select 115200 in dropdown (bottom right of Serial Monitor window)
+3. View output - Real-time text output of the sensor
 
-**What the code does:**
+What the code does:
 
 The sketch initializes the MPU-6050 sensor and continuously reads tilt angles in X and Y directions. It sends formatted data (`X:10.5,Y:-5.2`) to Unity via serial communication.
 
@@ -701,48 +701,48 @@ The sketch initializes the MPU-6050 sensor and continuously reads tilt angles in
 
 ##### 1. Platform
 
-1. **Hierarchy → 3D Object → Cube**
-2. Rename: **"Platform"**
+1. Hierarchy → 3D Object → Cube
+2. Rename: "Platform"
 3. Scale: (10, 0.2, 10)
 4. Position: (0, 0, 0)
-5. **Add Component → Rigidbody
+5. Add Component → Rigidbody
    - is Kinematic: turn on
    - use Gravity: turn off
    - Constraints → Freeze Positions X Y Z: turn on
-1. **Add Component → TiltListener** (TiltListener.cs)"
+1. Add Component → TiltListener (TiltListener.cs)"
    - Max Tilt Angle: 15
    - Rotation Speed: 5
 
 ##### 2. Ball
 
-1. **Hierarchy → 3D Object → Sphere**
-2. Rename: **"Ball"**
+1. Hierarchy → 3D Object → Sphere
+2. Rename: "Ball"
 3. Position: (0, 1, 0)
 4. Scale: (0.5, 0.5, 0.5)
-5. **Add Component → Rigidbody**
+5. Add Component → Rigidbody
    - Interpolate: Interpolate
    - Collision Detection: Continous 
 
 ##### 3. Spawner
 
-1. **Hierarchy → Create Empty**
-2. Rename: **"Respawner"**
-3. **Add Component → Respawner** (Respawner.cs)
+1. Hierarchy → Create Empty
+2. Rename: "Respawner"
+3. Add Component → Respawner (Respawner.cs)
 
 ##### 4. SerialController
 
-1. **Hierarchy →**  click **"SerialController"**
-2. change **Message Listener:**
-   - set Message Listener: Drag **Platform** (with the TiltListener Component) into the Message Listener field
+1. Hierarchy →  click "SerialController"
+2. change Message Listener:
+   - set Message Listener: Drag Platform (with the TiltListener Component) into the Message Listener field
 
 
 
 ##### Run and Test:
 
-1. **Connect ESP32** via USB (with MPU-6050 wired)
-2. **Close Arduino IDE** (Unity needs exclusive port access)
-3. Click Play in Unity **and hold the sensor completely still for 2 seconds to allow calibration**
-4. **Tilt the MPU-6050** → Platform should tilt, ball should roll
+1. Connect ESP32 via USB (with MPU-6050 wired)
+2. Close Arduino IDE (Unity needs exclusive port access)
+3. Click Play in Unity and hold the sensor completely still for 2 seconds to allow calibration
+4. Tilt the MPU-6050 → Platform should tilt, ball should roll
 
 ---
 
@@ -750,7 +750,7 @@ The sketch initializes the MPU-6050 sensor and continuously reads tilt angles in
 
 ESP-NOW is a wireless communication protocol developed by Espressif that allows ESP32 devices to communicate directly with each other without requiring a WiFi router. This is perfect for creating distributed sensor networks.
 
-**ESP-NOW Features:**
+ESP-NOW Features:
 - Direct peer-to-peer communication
 - Low latency (less than 10ms)
 - Low power consumption
@@ -759,9 +759,9 @@ ESP-NOW is a wireless communication protocol developed by Espressif that allows 
 
 ### Architecture:
 
-- **Sender ESP32s**: Multiple ESP32 boards with sensors
-- **Receiver ESP32**: Single ESP32 connected to computer, receives all sensor data
-- **Unity**: Receives data from receiver ESP32 via serial
+- Sender ESP32s: Multiple ESP32 boards with sensors
+- Receiver ESP32: Single ESP32 connected to computer, receives all sensor data
+- Unity: Receives data from receiver ESP32 via serial
 
 ### Wiring Sender ESP32:
 
@@ -769,20 +769,20 @@ Each sender ESP32 has the MPU6050 attached.
 
 ### Sender ESP32 Code:
 
-Open **"4_3_esp_now_sender.ino"** in the Arduino IDE and upload it to the sender ESP32.
+Open "4_3_esp_now_sender.ino" in the Arduino IDE and upload it to the sender ESP32.
 
-**Upload process:**
+Upload process:
 
-1. **Connect ESP32 via USB** - Use micro-USB cable to connect to computer
-2. **Select Board** - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
-3. **Select Port** - "Tools" → "Port" → Choose ESP32 USB port:
-   - **Windows:** COM3, COM4, COM5...
-   - **Mac:** /dev/cu.usbserial-... or /dev/cu.SLAB_USBtoUART
-   - **Linux:** /dev/ttyUSB0, /dev/ttyUSB1...
-4. **Click Upload** - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
-5. **Wait** - Sketch compiles: "Connecting..." appears: Press and hold the **BOOT button** for about **2 seconds** during the "Connecting..." phase, then release.
+1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
+2. Select Board - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
+3. Select Port - "Tools" → "Port" → Choose ESP32 USB port:
+   - Windows: COM3, COM4, COM5...
+   - Mac: /dev/cu.usbserial-... or /dev/cu.SLAB_USBtoUART
+   - Linux: /dev/ttyUSB0, /dev/ttyUSB1...
+4. Click Upload - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
+5. Wait - Sketch compiles: "Connecting..." appears: Press and hold the BOOT button for about 2 seconds during the "Connecting..." phase, then release.
 
-**What it does:** 
+What it does: 
 1. Reads sensor data
 2. Packages sensor x and y with unique device identifier 
 3. Broadcasts data to receiver ESP32 via ESP-NOW 
@@ -790,9 +790,9 @@ Open **"4_3_esp_now_sender.ino"** in the Arduino IDE and upload it to the sender
 
 ### Receiver ESP32 Code:
 
-**"4_3_esp_now_receiver.ino"**: We'll configure this together on a shared computer...  
+"4_3_esp_now_receiver.ino": We'll configure this together on a shared computer...  
 
-**What it does:**
+What it does:
 
 1. Listens for ESP-NOW messages from senders
 2. Forwards received data to Unity via serial
@@ -810,67 +810,67 @@ We'll configure this together on a shared computer...
 
 | Term           | Explanation                                                                                                            |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **GameObject** | Fundamental object in Unity scenes. Empty container that holds components to define appearance and behavior.           |
-| **Component**  | Modular pieces of functionality attached to GameObjects (Transform, Renderer, Collider, Scripts, etc.).                |
-| **Transform**  | Component that defines position, rotation, and scale of a GameObject in 3D space.                                      |
-| **Prefab**     | Reusable GameObject template stored as an asset. Changes to prefab update all instances.                               |
-| **Hierarchy**  | Window showing all GameObjects in current scene in tree structure.                                                     |
-| **Inspector**  | Window displaying properties and components of selected GameObject.                                                    |
-| **Scene View** | 3D workspace for building and arranging virtual environment.                                                           |
-| **Game View**  | Shows what player sees through camera. Used for testing.                                                               |
-| **Console**    | Displays debug messages, warnings, and errors from scripts.                                                            |
-| **Script**     | C# code file that defines custom GameObject behavior.                                                                  |
-| **Rigidbody**  | Component that enables physics simulation (gravity, forces, collisions).                                               |
-| **Collider**   | Component defining invisible boundaries for collision detection.                                                       |
-| **Instantiate**| Function to create new GameObject instances at runtime.                                                                |
-| **Destroy**    | Function to remove GameObjects from scene.                                                                             |
+| GameObject | Fundamental object in Unity scenes. Empty container that holds components to define appearance and behavior.           |
+| Component  | Modular pieces of functionality attached to GameObjects (Transform, Renderer, Collider, Scripts, etc.).                |
+| Transform  | Component that defines position, rotation, and scale of a GameObject in 3D space.                                      |
+| Prefab     | Reusable GameObject template stored as an asset. Changes to prefab update all instances.                               |
+| Hierarchy  | Window showing all GameObjects in current scene in tree structure.                                                     |
+| Inspector  | Window displaying properties and components of selected GameObject.                                                    |
+| Scene View | 3D workspace for building and arranging virtual environment.                                                           |
+| Game View  | Shows what player sees through camera. Used for testing.                                                               |
+| Console    | Displays debug messages, warnings, and errors from scripts.                                                            |
+| Script     | C# code file that defines custom GameObject behavior.                                                                  |
+| Rigidbody  | Component that enables physics simulation (gravity, forces, collisions).                                               |
+| Collider   | Component defining invisible boundaries for collision detection.                                                       |
+| Instantiate| Function to create new GameObject instances at runtime.                                                                |
+| Destroy    | Function to remove GameObjects from scene.                                                                             |
 
 ## ESP32 Hardware & Development
 
 | Term               | Explanation                                                                                                      |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| **IDE**            | Integrated Development Environment - Arduino IDE used for writing and uploading code to ESP32                    |
-| **USB Drivers**    | Software (CP2102/CP2104, CH340/CH341) that enables computer communication with ESP32 via USB                     |
-| **Serial Monitor** | Arduino IDE tool that displays real-time text output from ESP32 for debugging and monitoring sensor data         |
-| **Baud Rate**      | Communication speed (bits per second) between ESP32 and computer - common rates: 9600, 115200 bps                |
-| **Library**        | Pre-written code packages (like MPU6050_light.h) that add functionality to ESP32 projects                        |
-| **Sketch**         | Arduino program file containing setup() and loop() functions                                                     |
-| **Upload**         | Process of transferring compiled code from computer to ESP32                                                     |
-| **Compile**        | Converting human-readable code into machine language ESP32 can execute                                           |
-| **Breadboard**     | Solderless prototyping board with connected holes for temporarily connecting ESP32 pins to components            |
-| **Pin**            | Individual metal contact point on ESP32 that connects to breadboard or components for electrical connection      |
-| **GND**            | Ground - Reference voltage point that acts as the negative pole in ESP32 circuits, completes electrical circuits |
-| **VCC**            | Voltage Common Collector - General term for positive power supply voltage to components                          |
-| **3.3V**           | Three point three volt power supply pin - ESP32's native operating voltage for logic and sensors                 |
-| **GPIO Pins**      | General Purpose Input/Output - ESP32's 30+ configurable pins for connecting sensors, LEDs, and other components  |
-| **Digital Signal** | Binary electrical signal with only two states: HIGH (3.3V) or LOW (0V)                                           |
-| **Analog Signal**  | Continuous voltage signal ranging from 0V to 3.3V, represented digitally as 0-4095                               |
-| **I2C**            | Inter-Integrated Circuit - Two-wire communication protocol (SDA/SCL) used by sensors like MPU-6050               |
-| **EN Button**      | Reset button on ESP32 DevKit that restarts the microcontroller                                                   |
-| **BOOT Button**    | Button used to put ESP32 into upload mode during sketch upload                                                   |
+| IDE            | Integrated Development Environment - Arduino IDE used for writing and uploading code to ESP32                    |
+| USB Drivers    | Software (CP2102/CP2104, CH340/CH341) that enables computer communication with ESP32 via USB                     |
+| Serial Monitor | Arduino IDE tool that displays real-time text output from ESP32 for debugging and monitoring sensor data         |
+| Baud Rate      | Communication speed (bits per second) between ESP32 and computer - common rates: 9600, 115200 bps                |
+| Library        | Pre-written code packages (like MPU6050_light.h) that add functionality to ESP32 projects                        |
+| Sketch         | Arduino program file containing setup() and loop() functions                                                     |
+| Upload         | Process of transferring compiled code from computer to ESP32                                                     |
+| Compile        | Converting human-readable code into machine language ESP32 can execute                                           |
+| Breadboard     | Solderless prototyping board with connected holes for temporarily connecting ESP32 pins to components            |
+| Pin            | Individual metal contact point on ESP32 that connects to breadboard or components for electrical connection      |
+| GND            | Ground - Reference voltage point that acts as the negative pole in ESP32 circuits, completes electrical circuits |
+| VCC            | Voltage Common Collector - General term for positive power supply voltage to components                          |
+| 3.3V           | Three point three volt power supply pin - ESP32's native operating voltage for logic and sensors                 |
+| GPIO Pins      | General Purpose Input/Output - ESP32's 30+ configurable pins for connecting sensors, LEDs, and other components  |
+| Digital Signal | Binary electrical signal with only two states: HIGH (3.3V) or LOW (0V)                                           |
+| Analog Signal  | Continuous voltage signal ranging from 0V to 3.3V, represented digitally as 0-4095                               |
+| I2C            | Inter-Integrated Circuit - Two-wire communication protocol (SDA/SCL) used by sensors like MPU-6050               |
+| EN Button      | Reset button on ESP32 DevKit that restarts the microcontroller                                                   |
+| BOOT Button    | Button used to put ESP32 into upload mode during sketch upload                                                   |
 
 ## Data Exchange & Networking
 
 | Term                   | Explanation                                                                                                    |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Serial Communication** | Method of sending data one bit at a time over single wire (USB cable between ESP32 and computer)            |
-| **ESP-NOW**            | Peer-to-peer wireless communication protocol for direct ESP32-to-ESP32 communication without WiFi router      |
-| **MAC Address**        | Unique hardware identifier for ESP32's network interface, required for ESP-NOW pairing                        |
-| **Sender**             | ESP32 device that transmits sensor data in ESP-NOW network                                                     |
-| **Receiver**           | ESP32 device that receives data from multiple senders and forwards to computer/Unity                           |
-| **Ardity**             | Unity library that enables serial communication between Unity and microcontrollers                             |
+| Serial Communication | Method of sending data one bit at a time over single wire (USB cable between ESP32 and computer)            |
+| ESP-NOW            | Peer-to-peer wireless communication protocol for direct ESP32-to-ESP32 communication without WiFi router      |
+| MAC Address        | Unique hardware identifier for ESP32's network interface, required for ESP-NOW pairing                        |
+| Sender             | ESP32 device that transmits sensor data in ESP-NOW network                                                     |
+| Receiver           | ESP32 device that receives data from multiple senders and forwards to computer/Unity                           |
+| Ardity             | Unity library that enables serial communication between Unity and microcontrollers                             |
 
 ## Code Concepts
 
 | Term              | Explanation                                                                                          |
 | ----------------- | ---------------------------------------------------------------------------------------------------- |
-| **Function**      | Named block of code that performs specific task. Can be called/executed from other parts of program  |
-| **Variable**      | Named storage location for data that can change during program execution                             |
-| **Loop**          | Code structure that repeats execution (Arduino's loop() function runs continuously)                  |
-| **Condition**     | Expression that evaluates to true or false, used for decision making in code (if statements)         |
-| **Public**        | Variable or function accessible from outside the class/script (visible in Unity Inspector)           |
-| **Private**       | Variable or function only accessible within the same class/script                                    |
-| **Delta Time**    | Time elapsed since last frame. Used to make movement frame-rate independent (Time.deltaTime)         |
-| **Instantiate**   | Creating new instance of object at runtime                                                           |
-| **Parse**         | Converting data from one format to another (e.g., string to float)                                   |
+| Function      | Named block of code that performs specific task. Can be called/executed from other parts of program  |
+| Variable      | Named storage location for data that can change during program execution                             |
+| Loop          | Code structure that repeats execution (Arduino's loop() function runs continuously)                  |
+| Condition     | Expression that evaluates to true or false, used for decision making in code (if statements)         |
+| Public        | Variable or function accessible from outside the class/script (visible in Unity Inspector)           |
+| Private       | Variable or function only accessible within the same class/script                                    |
+| Delta Time    | Time elapsed since last frame. Used to make movement frame-rate independent (Time.deltaTime)         |
+| Instantiate   | Creating new instance of object at runtime                                                           |
+| Parse         | Converting data from one format to another (e.g., string to float)                                   |
 
