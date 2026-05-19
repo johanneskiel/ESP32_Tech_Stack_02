@@ -458,7 +458,7 @@ Serial Communication is a method of sending data one bit at a time over a single
 
 Open "2_serial_com.ino" in the Arduino IDE
 
-Upload process:
+##### Upload process:
 
 1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
 2. Select Board - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
@@ -469,14 +469,14 @@ Upload process:
 4. Click Upload - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
 5. Wait - Sketch compiles: "Connecting..." appears: Press and hold the BOOT button for about 2 seconds during the "Connecting..." phase, then release.
 
-Open Serial Monitor:
+##### Open Serial Monitor:
 
 1. After uploading the sketch: Open Serial Monitor - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
 2. Set baud rate - Select 115200 in dropdown (bottom right of Serial Monitor window)
 3. View output - Real-time text output from ESP32 appears here
 4. Tip: If no output appears, press the EN (Reset) button on ESP32 to restart.
 
-What happens in the code:
+##### What happens in the code:
 
 The ESP32 starts in the setup() function and prepares to send data with Serial.begin(). In the loop() function, which repeats continuously, it sends data to the computer using Serial.print(). To prevent this from happening too quickly, there is a delay(). The Serial Monitor can read and display this data.
 
@@ -532,7 +532,7 @@ The water level sensor detects the presence and level of water by measuring cond
 
 Download and open "3_WaterSensor.ino" in the Arduino IDE
 
-Upload process:
+##### Upload process:
 
 1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
 2. Select Board - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
@@ -543,14 +543,14 @@ Upload process:
 4. Click Upload - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
 5. Wait - Sketch compiles: "Connecting..." appears: Press and hold the BOOT button for about 2 seconds during the "Connecting..." phase, then release.
 
-Open Serial Monitor:
+##### Open Serial Monitor:
 
 1. After uploading the sketch: Open Serial Monitor - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
 2. Set baud rate - Select 115200 in dropdown (bottom right of Serial Monitor window)
 3. View output - Real-time text output of the water level sensor
 4. → Test the sensor readings using the water cup.
 
-What happens in the code:
+##### What happens in the code:
 
 The ESP32 starts in the setup() function and prepares the pin to receive data from the sensor. In the loop() function, it receives data via analogRead() which it sends to the computer using Serial.print(). The Serial Monitor can read and display this data.
 
@@ -626,7 +626,7 @@ Unity can't read serial data by default. Ardity is a free library that handles E
 1. Connect ESP32 via USB (with water sensor wired)
 2. Close Arduino IDE (Unity needs exclusive port access)
 3. Click Play in Unity
-4. Check Console: Should see "ESP32 Wassersensor connected"
+4. Check Console: Should see "ESP32 connected"
 
 
 
@@ -647,7 +647,6 @@ Now we'll work with the MPU-6050, to create a tilt-controlled platform in Unity.
 
 The MPU-6050 is a 6-axis accelerometer and gyroscope sensor that measures motion and orientation in 3D space.
 
-Technical specifications:
 - 3-axis accelerometer (measures acceleration/tilt)
 - 3-axis gyroscope (measures rotation)
 - I2C communication protocol
@@ -667,9 +666,9 @@ Technical specifications:
 
 ### ESP32 Code:
 
-Open "4_2_MPU6050.ino" in the Arduino IDE and upload it following the same process as before. 
+Open "4_2_MPU6050.ino" in the Arduino IDE and upload it following the same process as before: ...
 
-Upload process:
+##### Upload process:
 
 1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
 2. Select Board - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
@@ -680,13 +679,13 @@ Upload process:
 4. Click Upload - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
 5. Wait - Sketch compiles: "Connecting..." appears: Press and hold the BOOT button for about 2 seconds during the "Connecting..." phase, then release.
 
-Open Serial Monitor:
+##### Open Serial Monitor:
 
 1. After uploading the sketch: Open Serial Monitor - Click magnifying glass icon in Arduino IDE or "Tools" → "Serial Monitor"
 2. Set baud rate - Select 115200 in dropdown (bottom right of Serial Monitor window)
 3. View output - Real-time text output of the sensor
 
-What the code does:
+##### What the code does:
 
 The sketch initializes the MPU-6050 sensor and continuously reads tilt angles in X and Y directions. It sends formatted data (X:10.5,Y:-5.2) to Unity via serial communication.
 
@@ -769,7 +768,7 @@ Each sender ESP32 has the MPU6050 attached.
 
 Open "4_3_esp_now_sender.ino" in the Arduino IDE and upload it to the sender ESP32.
 
-Upload process:
+##### Upload process:
 
 1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
 2. Select Board - In Arduino IDE: "Tools" → "Board" → "ESP32 Dev Module"
@@ -780,9 +779,9 @@ Upload process:
 4. Click Upload - Arrow symbol in Arduino IDE or Ctrl+U (Cmd+U on Mac)
 5. Wait - Sketch compiles: "Connecting..." appears: Press and hold the BOOT button for about 2 seconds during the "Connecting..." phase, then release.
 
-What it does: 
+##### What it does: 
 1. Reads sensor data
-2. Packages sensor x and y with unique device identifier 
+2. Packages sensor x and y with unique projekt identifier 
 3. Broadcasts data to receiver ESP32 via ESP-NOW 
 4. Repeats every 100ms for real-time updates 
 
@@ -790,7 +789,7 @@ What it does:
 
 "4_3_esp_now_receiver.ino": We'll configure this together on a shared computer...  
 
-What it does:
+##### What it does:
 
 1. Listens for ESP-NOW messages from senders
 2. Forwards received data to Unity via serial
