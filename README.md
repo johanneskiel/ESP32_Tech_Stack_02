@@ -126,10 +126,9 @@ Setup time: 10 - 15 minutes.
 
 ### Step 1: Download Arduino IDE
 
-1. Make sure your Mac is updated to the latest version of macOS. (This is important so that the Arduino IDE can install Xcode automatically later on.) 
-2. Go to: www.arduino.cc/en/software
-3. Download "Windows Win 10 and newer, 64 bits"
-4. Install the downloaded file
+1. Go to: www.arduino.cc/en/software
+2. Download "Windows Win 10 and newer, 64 bits"
+3. Install the downloaded file
 
 ### Step 2: Install USB Drivers
 
@@ -182,11 +181,12 @@ MPU6050_light.h:
 
 ### IMPORTANT: Please bring MAC standard USB adapter
 
-### Step 1: Download Arduino IDE
+### Step 1: Setup Arduino IDE
 
-1. Go to: www.arduino.cc/en/software
-2. Download MacOS Intel or MacOS Apple Silicon
-3. Install in Applications folder
+1. Make sure your Mac is updated to the latest version of macOS. (This is important so that the Arduino IDE can install xcode automatically later on.) 
+2. Go to: www.arduino.cc/en/software
+3. Download MacOS Intel or MacOS Apple Silicon
+4. Install in Applications folder
 
 ### Step 2: Install USB Driver
 
