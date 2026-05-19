@@ -575,7 +575,7 @@ A Unity scene where GameObjects move up and down based on water level.
 
 Unity can't read serial data by default. Ardity is a free library that handles ESP32 to Unity communication. 
 
-- Drag and drop the folder ".../Techstack_Projekt_Folder/Unity/Ardity" into "/Assets" of the “Project” window at the bottom of Unity. (Or from: https://ardity.dwilches.com/  and Import into Unity)
+- Drag and drop the folder "ESP32_Tech_Stack_02-main/Unity/Scripts" into "/Assets" of the “Project” window at the bottom of Unity. (Or from: https://ardity.dwilches.com/  and Import into Unity)
 - Go to Edit → Project Settings → Player:
 	- Under Other Settings, you'll find API Compatibility Level
 	- Change it from .NET Standard 2.0 to .NET Framework (or .NET 4.x)
