@@ -386,10 +386,8 @@ Prefabs are reusable templates that store complete GameObjects with all their Co
 ## Hands on: Understanding Components
 
 1. Implement Techstack Files : 
-	- Download the Techstack_Projekt_Folder from this Git repository:  
-		- Click the “Code” drop-down menu in the upper-right corner  
-		- Click “Download ZIP”
-	- Drag and drop the folder ".../Techstack_Projekt_Folder/Unity/Scripts" into "/Assets" of the “Project” window at the bottom of Unity
+	- Download the Techstack project folder from this Git repository: https://github.com/johanneskiel/ESP32_Tech_Stack_02/archive/refs/heads/main.zip 
+	- Drag and drop the folder "ESP32_Tech_Stack_02-main/Unity/Scripts" into "/Assets" of the “Project” window at the bottom of Unity
 
 2. Create the GameObject:
    - In the Hierarchy, right-click → 3D Object → Sphere
@@ -457,7 +455,7 @@ Serial Communication is a method of sending data one bit at a time over a single
 
 ## Hands on: Uploading the First Sketch to ESP32 DevKit
 
-Open "2_serial_com.ino" in the Arduino IDE
+Open "2_serial_com.ino" in the Arduino IDE (project folder: ".../ESP32_Tech_Stack_02-main/ESP32")
 
 ##### Upload process:
 
