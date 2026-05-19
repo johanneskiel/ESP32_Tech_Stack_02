@@ -82,32 +82,33 @@ Two Wave Operators that communicate via water with water level sensors.
 
 ## Table of Contents
 
-### [0. Setup: ESP Arduino IDE & Unity Engine](#0-setup-esp-arduino-ide--unity-engine)
+### [0. Setup: ESP Arduino IDE & Unity Engine](#0-setup-esp-arduino-ide--unity-engine-1)
 
 Installation guide for Arduino IDE, USB drivers, ESP32 board support, and Unity Game Engine on Windows, macOS, and Linux.
 
-### [1. Unity: Interface and C#](#1-unity-interface-and-c)
+### [1. Unity: Interface and C#](#1-unity-interface-and-c-1)
 
 Unity fundamentals: creating your first project, understanding the interface, and basic C# scripting for game objects.
 
-### [2. ESP32: Arduino IDE and C++](#2-esp32-arduino-ide-and-c)
+### [2. ESP32: Arduino IDE and C++](#2-esp32-arduino-ide-and-c-1)
 
 Serial communication between ESP32 and computer, uploading your first sketch, and monitoring output.
 
-### [3. Sensor: Hardware and Cabling](#3-sensor-hardware-and-cabling)
+### [3. Sensor: Hardware and Cabling](#3-sensor-hardware-and-cabling-1)
 
 ESP32 DevKit V1 hardware specifications, GPIO pins, and reading sensor data via serial communication.
 
-### [4. Unity + ESP32 + Sensor: Data Transmission](#4-unity--esp32--sensor-data-transmission)
+### [4. Unity + ESP32 + Sensor: Data Transmission](#4-unity--esp32--sensor-data-transmission-1)
 
 ESP32 to Unity integration:
 - 4_1 Integrating a water level sensor into your Unity project
 - 4_2 Working with complex sensors (MPU-6050 accelerometer/gyroscope)
 - 4_3 Room-scale sensor networks: Network data transmission with ESP-NOW
 
-### [5. Terminology Guide](#5-terminology-guide)
+### [5. Terminology Guide](#5-terminology-guide-1)
 
 Glossary of essential terms related to ESP32 hardware, development, data transmission, and Unity concepts.
+
 
 ---
 
