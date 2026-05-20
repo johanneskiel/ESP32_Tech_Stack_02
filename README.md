@@ -768,6 +768,8 @@ Each sender ESP32 has the MPU6050 attached.
 
 Open "4_3_esp_now_sender.ino" in the Arduino IDE and upload it to the sender ESP32.
 
+Choose a color in the code.
+
 ##### Upload process:
 
 1. Connect ESP32 via USB - Use micro-USB cable to connect to computer
